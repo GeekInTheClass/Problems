@@ -1,0 +1,21 @@
+/알파벳를 세번씩 반복해서 한 스트링 변수에 저장하세요
+
+let str : [String] = ["a","b","c","d","e","f","g"]
+
+var repeat3 : [String] = []
+
+var temp : String = ""
+
+for i in str {
+    for _ in 1...3 {
+        temp += i
+    }
+    repeat3.append(temp)
+    temp = ""
+}
+
+var result2 : String = ""
+
+for i in repeat3 {
+    result2 += i
+}
