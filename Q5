@@ -1,0 +1,7 @@
+//get the sum of prices of fruits which are more cheap than 500
+var sum2: Double = 0.0
+for fruit in fruits{
+    if fruit < 500.0{
+        sum2 = fruitsum(fruit1: sum2, fruit2: fruit)
+    }
+}
