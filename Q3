@@ -1,0 +1,14 @@
+//choose fruits which are more expensive than 300 after getting 30% DC
+let fruits = [500.0, 300.0, 100.0, 600.0, 1000.0, 80.0]
+
+func fruitDC(howmuch: Double) -> Double {
+    return howmuch * 0.7
+}
+
+var expensivefruits : [Double] = []
+
+for fruit in fruits {
+    if fruitDC(howmuch: fruit) > 300 {
+        expensivefruits += [fruitDC(howmuch: fruit)]
+    }
+}
