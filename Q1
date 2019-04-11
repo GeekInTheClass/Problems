@@ -1,0 +1,21 @@
+//배열에서 중간값보다 큰 값들을 모두 더한 값을 구하세요
+
+let array : [Int] = [5,2,6,1,8]
+
+var sortedArray : [Int] = array
+
+for i in 0...sortedArray.count-1 {
+    for j in i...sortedArray.count-1 {
+        if sortedArray[i] > sortedArray[j] {
+            sortedArray.swapAt(i, j)
+        }
+    }
+}
+
+var result : Int = 0
+
+for i in 0...sortedArray.count-1 {
+    if sortedArray[i] > sortedArray[sortedArray.count/2] {
+        result += sortedArray[i]
+    }
+}
