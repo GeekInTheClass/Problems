@@ -1,0 +1,9 @@
+//get the sum of prices of all fruits after getting 30% DC
+func fruitsum(fruit1: Double, fruit2: Double) -> Double{
+    return fruit1 + fruit2
+}
+
+var sum : Double = 0.0
+for fruit in fruits{
+    sum = fruitsum(fruit1: sum, fruit2: fruitDC(howmuch: fruit))
+}
